@@ -5,6 +5,10 @@ The protocol is very simple. Inspired by Altera's USB-Blaster.
 
 Currently, we just defined data transfer protocol, the target report protocol and frequency control protocol still remains undefined.
 
+If we realize this protocol in CDC-ACM protocol, maybe we can control frequency by CDC_SET_LINE operation.
+
+If we realize this protocol in bare USB custom protocol, use control transfer maybe better, just like FT245.
+
 Data Transfer and Interface
 -----
 
