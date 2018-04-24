@@ -16,6 +16,8 @@ We have two endpoints, one in, one out. So we have two FIFOs to handle data. Jus
 
 I prefer to realize it as a CDC-ACM interface, or a custom bulk-in/bulk-out interface. But, the most important thing is, I want driverless solution, AND I want extendable solution, for example, it can composed with an HID or a CDC interface.
 
+If we realize it over usb, I prefer to use dual-buffer to increase speed.
+
 But it depends on Windows driver, I doesn't want to write Windows kernel-mode driver and get signature from M$.
 
 Control byte
